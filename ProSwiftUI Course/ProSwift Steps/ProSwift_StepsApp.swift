@@ -11,7 +11,7 @@ import SwiftUI
 struct ProSwift_StepsApp: App {
     var body: some Scene {
         WindowGroup {
-            SwiftUIView24()
+            SwiftUIView26()
         }
     }
 }
