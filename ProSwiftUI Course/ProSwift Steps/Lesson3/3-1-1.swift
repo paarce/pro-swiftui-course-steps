@@ -30,45 +30,13 @@ struct RequirableTextField: View {
     }
 }
 
-struct StokeWidthKey: EnvironmentKey {
-    static var defaultValue = 1.0
-}
-
-struct CiclesView: View {
-    @EnvironmentObject var theme: ThemeManager
-
-    var body: some View {
-        VStack {
-            Circle()
-                .stroke(.red, lineWidth: theme.stokeWidth)
-            Circle()
-                .stroke(.red, lineWidth: theme.stokeWidth)
-        }
-    }
-}
-
-
-struct TitleFontKey: EnvironmentKey {
-    static var defaultValue = Font.system(.largeTitle)
-}
-
-class ThemeManager: ObservableObject {
-    @Published var strokeWidth = 1.0
-    @Published var titleFont = TitleFontKey.defaultValue
-}
-
-
-
-struct SwiftUIView31: View {
+struct SwiftUIView311: View {
     @State private var firstName = ""
     @State private var lastName = ""
     @State private var makeRequired = false
 
-    @State private var sliderValue = 1.0
-
     var body: some View {
-//        form
-        circles
+        form
     }
 
     var form: some View {
@@ -80,30 +48,17 @@ struct SwiftUIView31: View {
         .required(makeRequired)
     }
 
-
-    var circles: some View {
-
-        VStack {
-            CiclesView()
-            Slider(value: $sliderValue, in: 1...10)
-        }
-        .stokeWidth(sliderValue)
-    }
 }
 
-struct SwiftUIView31_Previews: PreviewProvider {
+struct SwiftUIView311_Previews: PreviewProvider {
     static var previews: some View {
-        SwiftUIView31()
+        SwiftUIView311()
     }
 }
 
 private extension View {
     func required(_ makeRequired: Bool = true) -> some View {
         environment(\.required, makeRequired)
-    }
-
-    func stokeWidth(_ width: Double = 1.0) -> some View {
-        environment(\.stokeWidth, width)
     }
 }
 
@@ -112,10 +67,5 @@ private extension EnvironmentValues {
     var required: Bool {
         get { self[FromElementIsRequuired.self] }
         set { self[FromElementIsRequuired.self] = newValue }
-    }
-
-    var stokeWidth: Double {
-        get { self[StokeWidthKey.self] }
-        set { self[StokeWidthKey.self] = newValue }
     }
 }
