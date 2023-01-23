@@ -35,17 +35,29 @@ struct StokeWidthKey: EnvironmentKey {
 }
 
 struct CiclesView: View {
-    @Environment(\.stokeWidth) var stokeWidth
+    @EnvironmentObject var theme: ThemeManager
 
     var body: some View {
         VStack {
             Circle()
-                .stroke(.red, lineWidth: stokeWidth)
+                .stroke(.red, lineWidth: theme.stokeWidth)
             Circle()
-                .stroke(.red, lineWidth: stokeWidth)
+                .stroke(.red, lineWidth: theme.stokeWidth)
         }
     }
 }
+
+
+struct TitleFontKey: EnvironmentKey {
+    static var defaultValue = Font.system(.largeTitle)
+}
+
+class ThemeManager: ObservableObject {
+    @Published var strokeWidth = 1.0
+    @Published var titleFont = TitleFontKey.defaultValue
+}
+
+
 
 struct SwiftUIView31: View {
     @State private var firstName = ""
