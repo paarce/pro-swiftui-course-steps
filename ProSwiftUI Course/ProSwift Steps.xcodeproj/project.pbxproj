@@ -13,6 +13,9 @@
 		8633F4DD297ABE44000841BA /* 3-1-2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8633F4DC297ABE44000841BA /* 3-1-2.swift */; };
 		864497BD297F32F100A0B7AE /* 3-3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864497BC297F32F100A0B7AE /* 3-3.swift */; };
 		864497BF297F391E00A0B7AE /* 3-4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864497BE297F391E00A0B7AE /* 3-4.swift */; };
+		F357501929A624380073BE19 /* 4-3.swift in Sources */ = {isa = PBXBuildFile; fileRef = F357501829A624380073BE19 /* 4-3.swift */; };
+		F357501B29A6371F0073BE19 /* 4-3-Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = F357501A29A6371F0073BE19 /* 4-3-Challenge.swift */; };
+		F357501D29A75DAE0073BE19 /* 4-4.swift in Sources */ = {isa = PBXBuildFile; fileRef = F357501C29A75DAE0073BE19 /* 4-4.swift */; };
 		F372D59B296EAFE9007AB34D /* ProSwift_StepsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F372D59A296EAFE9007AB34D /* ProSwift_StepsApp.swift */; };
 		F372D59D296EAFE9007AB34D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F372D59C296EAFE9007AB34D /* ContentView.swift */; };
 		F372D59F296EAFEA007AB34D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F372D59E296EAFEA007AB34D /* Assets.xcassets */; };
@@ -35,6 +38,9 @@
 		8633F4DC297ABE44000841BA /* 3-1-2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "3-1-2.swift"; sourceTree = "<group>"; };
 		864497BC297F32F100A0B7AE /* 3-3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "3-3.swift"; sourceTree = "<group>"; };
 		864497BE297F391E00A0B7AE /* 3-4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "3-4.swift"; sourceTree = "<group>"; };
+		F357501829A624380073BE19 /* 4-3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "4-3.swift"; sourceTree = "<group>"; };
+		F357501A29A6371F0073BE19 /* 4-3-Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "4-3-Challenge.swift"; sourceTree = "<group>"; };
+		F357501C29A75DAE0073BE19 /* 4-4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "4-4.swift"; sourceTree = "<group>"; };
 		F372D597296EAFE9007AB34D /* ProSwift Steps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ProSwift Steps.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F372D59A296EAFE9007AB34D /* ProSwift_StepsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProSwift_StepsApp.swift; sourceTree = "<group>"; };
 		F372D59C296EAFE9007AB34D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -144,6 +150,9 @@
 			children = (
 				F3B584C3297FE25E009D50CF /* 4-1.swift */,
 				F3B584C8297FECC3009D50CF /* 4-2.swift */,
+				F357501829A624380073BE19 /* 4-3.swift */,
+				F357501A29A6371F0073BE19 /* 4-3-Challenge.swift */,
+				F357501C29A75DAE0073BE19 /* 4-4.swift */,
 			);
 			path = Lesson4;
 			sourceTree = "<group>";
@@ -223,7 +232,9 @@
 				8633F4DD297ABE44000841BA /* 3-1-2.swift in Sources */,
 				F372D5D3297698BC007AB34D /* 2-1.swift in Sources */,
 				F372D5D72976A896007AB34D /* 2-3.swift in Sources */,
+				F357501929A624380073BE19 /* 4-3.swift in Sources */,
 				8627F13929793A20006D82CB /* 2-5.swift in Sources */,
+				F357501B29A6371F0073BE19 /* 4-3-Challenge.swift in Sources */,
 				F3B584C4297FE25E009D50CF /* 4-1.swift in Sources */,
 				F372D5AF296EBEF2007AB34D /* 1-7.swift in Sources */,
 				F372D59B296EAFE9007AB34D /* ProSwift_StepsApp.swift in Sources */,
@@ -232,6 +243,7 @@
 				8627F13D29796AB8006D82CB /* 3-1-1.swift in Sources */,
 				864497BD297F32F100A0B7AE /* 3-3.swift in Sources */,
 				864497BF297F391E00A0B7AE /* 3-4.swift in Sources */,
+				F357501D29A75DAE0073BE19 /* 4-4.swift in Sources */,
 				F372D5D92976C26B007AB34D /* 2-4.swift in Sources */,
 				F3B584C9297FECC3009D50CF /* 4-2.swift in Sources */,
 				F3B584C1297FCAE6009D50CF /* 3-5.swift in Sources */,

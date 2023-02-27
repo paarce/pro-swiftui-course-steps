@@ -26,8 +26,6 @@ struct RadialLayout: Layout {
             subview.place(at: point, anchor: .center, proposal: .unspecified)
         }
     }
-
-
 }
 
 struct SwiftUIView42: View {
