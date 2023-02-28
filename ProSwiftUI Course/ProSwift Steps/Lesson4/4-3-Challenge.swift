@@ -13,7 +13,7 @@ struct EqualHeightVStack: Layout {
         let maxSize = maxSize(accross: subviews)
         let spacing = spacing(for: subviews)
         let totalSpacing = spacing.reduce(0, +)
-        return CGSize(width: 100, height: maxSize.height * Double(subviews.count) + totalSpacing)
+        return CGSize(width: maxSize.width, height: maxSize.height * Double(subviews.count) + totalSpacing)
     }
 
     func placeSubviews(in bounds: CGRect, proposal: ProposedViewSize, subviews: Subviews, cache: inout ()) {
@@ -32,7 +32,7 @@ struct EqualHeightVStack: Layout {
     private func maxSize(accross subviews: Subviews) -> CGSize {
         let sizes = subviews.map { $0.sizeThatFits(.unspecified) }
         return sizes.reduce(.zero) { largest, next in
-                .init(width: 100, height: max(largest.height, next.height))
+                .init(width: max(largest.width, next.width), height: max(largest.height, next.height))
         }
     }
 
@@ -48,26 +48,24 @@ struct EqualHeightVStack: Layout {
 struct SwiftUIView43Challenge: View {
     var body: some View {
         EqualHeightVStack {
-            Text("Hello, World! Hello, World! Hello, World! Hello, World!")
-                .lineLimit(0)
-                .frame(width: 50)
-//                .background(.blue)
+            Text("Hello, World! Hello, World! Hello, World! Hello, World! 123 4567 890 123456 7890 123456 7890 123456 7890")
+                .frame(idealWidth: 300, maxHeight: .infinity)
+                .lineLimit(5)
+                .background(.blue)
             Text("Hello")
-//                .background(.green)
+                .background(.red)
             Text("shadjksa")
-//                .background(.green)
+                .background(.green)
             Text("shadjksa")
-//                .background(.green)
+                .background(.green)
             Text("shadjksa")
-//                .background(.green)
+                .background(.indigo)
             Text("shadjksa")
-//                .background(.green)
+                .background(.brown)
             Text("shadjksa")
-//                .background(.green)
+                .background(.purple)
         }
-        .frame(maxWidth: 50)
-        .frame(width: 50)
-        .background(.cyan)
+//        .background(.cyan)
     }
 }
 
